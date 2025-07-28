@@ -3,6 +3,14 @@ package com.Shapes;
 public class ComplexNum{
    private double rNum;
    private double eNum;
+
+   public ComplexNum(double rNum, double eNum) {
+      this.rNum = rNum;
+      this.eNum = eNum;
+   }
+   public double absN() {
+      return Math.sqrt(eNum*eNum+rNum*rNum);
+   }
    public double getrNum() {
       return rNum;
    }
