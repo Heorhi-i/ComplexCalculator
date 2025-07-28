@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ece4ce06-454d-4de3-8564-551108a9d599" name="Changes" comment="some files" />
+    <list default="true" id="ece4ce06-454d-4de3-8564-551108a9d599" name="Changes" comment="some calcs">
+      <change beforePath="$PROJECT_DIR$/com/Shapes/ComplexNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/calculators/Calculator.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +48,11 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\idiaProjects\ComplexCalculator" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,7 +94,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753715824734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some calcs">
+      <option name="closed" value="true" />
+      <created>1753716664002</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753716664002</updated>
+    </task>
+    <task id="LOCAL-00006" summary="some calcs">
+      <option name="closed" value="true" />
+      <created>1753716952751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753716952751</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,6 +118,7 @@
     <MESSAGE value="delete one gitignore" />
     <MESSAGE value="some trash from idea" />
     <MESSAGE value="some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="some files" />
+    <MESSAGE value="some calcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="some calcs" />
   </component>
 </project>
