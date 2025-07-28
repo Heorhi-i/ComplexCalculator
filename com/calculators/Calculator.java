@@ -4,7 +4,9 @@ import com.Shapes.ComplexNum;
 
 public class Calculator{
     public static void main(String[] args) {
-        System.out.println("hello");
+        ComplexNum  CN = new ComplexNum(4, 4);
+        double v= CN.absN;
+        System.out.println(v);
     }
 }
 
