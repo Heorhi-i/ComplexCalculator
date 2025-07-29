@@ -16,7 +16,7 @@ public class ComplexNum{
       if (denom !=0){
          return new ComplexNum(rNum/denom, -iNum/denom);
       } else{
-         throw new IllegalStateException("z=0");
+         throw new IllegalStateException("You have zeros");
       }
    }
 
