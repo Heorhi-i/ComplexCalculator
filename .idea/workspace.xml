@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ece4ce06-454d-4de3-8564-551108a9d599" name="Changes" comment="complex calculator">
+    <list default="true" id="ece4ce06-454d-4de3-8564-551108a9d599" name="Changes" comment="complex calculator with recursive inputs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/Shapes/ComplexNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/Shapes/ComplexNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/calculators/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/calculators/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753769367574</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="complex calculator with recursive inputs">
+      <option name="closed" value="true" />
+      <created>1753770205868</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753770205868</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -158,7 +167,8 @@
     <MESSAGE value="some calcs" />
     <MESSAGE value="calc module" />
     <MESSAGE value="complex calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="complex calculator" />
+    <MESSAGE value="complex calculator with recursive inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="complex calculator with recursive inputs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

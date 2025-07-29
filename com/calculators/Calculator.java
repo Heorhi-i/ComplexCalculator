@@ -6,11 +6,6 @@ import com.Shapes.ComplexNum;
 
 public class Calculator{
     public static void main(String[] args) throws IOException {
-        ComplexNum  CN = new ComplexNum(4, 4);
-        double v= CN.absN();
-        ComplexNum h= CN.getReciprocal();
-        System.out.println(v);
-        System.out.println(h);
         System.out.println("Enter first double real:");
         double f=DoubleInput();
         System.out.println("Enter first double imagen:");
@@ -29,7 +24,6 @@ public class Calculator{
         System.out.println(w2);
         ComplexNum j2= CM2.getReciprocal();
         System.out.println(j2);
-        //System.out.println("Enter operator: +  -  *  /");
         choseMenu(CM,CM2);
     }
     static void choseMenu(ComplexNum CM, ComplexNum CM2){
