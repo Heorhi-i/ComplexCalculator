@@ -29,34 +29,46 @@ public class Calculator{
         System.out.println(w2);
         ComplexNum j2= CM2.getReciprocal();
         System.out.println(j2);
+        //System.out.println("Enter operator: +  -  *  /");
+        choseMenu(CM,CM2);
+    }
+    static void choseMenu(ComplexNum CM, ComplexNum CM2){
         System.out.println("Enter operator: +  -  *  /");
         String operator=OperatorInput();
-        switch (operator){
-            case "+": double rs=CM2.getrNum()+CM.getrNum();
-                double is=CM2.getiNum()+CM.getiNum();
-                ComplexNum sum=new ComplexNum(rs, is);
-                System.out.println("Sum ="+sum);
+        switch (operator) {
+            case "+":
+                double rs = CM2.getrNum() + CM.getrNum();
+                double is = CM2.getiNum() + CM.getiNum();
+                ComplexNum sum = new ComplexNum(rs, is);
+                System.out.println("Sum =" + sum);
                 break;
-            case "-": double rs1=CM.getrNum()-CM2.getrNum();
-                double is1=CM.getiNum()-CM2.getiNum();
-                ComplexNum sub=new ComplexNum(rs1, is1);
-                System.out.println("Sub ="+sub);
+            case "-":
+                double rs1 = CM.getrNum() - CM2.getrNum();
+                double is1 = CM.getiNum() - CM2.getiNum();
+                ComplexNum sub = new ComplexNum(rs1, is1);
+                System.out.println("Sub =" + sub);
                 break;
-            case "*": double rs2=((CM2.getrNum()*CM.getrNum())-(CM2.getiNum()*CM.getiNum()));
-                double is2=((CM.getrNum()*CM2.getiNum())+(CM.getiNum()*CM2.getrNum()));
-                ComplexNum mul=new ComplexNum(rs2, is2);
-                System.out.println("Mul ="+mul);
+            case "*":
+                double rs2 = ((CM2.getrNum() * CM.getrNum()) - (CM2.getiNum() * CM.getiNum()));
+                double is2 = ((CM.getrNum() * CM2.getiNum()) + (CM.getiNum() * CM2.getrNum()));
+                ComplexNum mul = new ComplexNum(rs2, is2);
+                System.out.println("Mul =" + mul);
                 break;
-            case "/": double rs3=(((CM2.getrNum()*CM.getrNum())+(CM2.getiNum() *CM.getiNum())))/
-                        (CM2.getrNum()*CM2.getrNum()+CM2.getiNum()*CM2.getiNum());
-                double is3=((CM2.getrNum()*CM.getiNum())-(CM.getrNum()*CM2.getiNum()))/
-                        (CM2.getrNum()*CM2.getrNum()+CM2.getiNum()*CM2.getiNum());
-                ComplexNum div=new ComplexNum(rs3, is3);
-                System.out.println("Div ="+div);
+            case "/":
+                double rs3 = (((CM2.getrNum() * CM.getrNum()) + (CM2.getiNum() * CM.getiNum()))) /
+                        (CM2.getrNum() * CM2.getrNum() + CM2.getiNum() * CM2.getiNum());
+                double is3 = ((CM2.getrNum() * CM.getiNum()) - (CM.getrNum() * CM2.getiNum())) /
+                        (CM2.getrNum() * CM2.getrNum() + CM2.getiNum() * CM2.getiNum());
+                ComplexNum div = new ComplexNum(rs3, is3);
+                System.out.println("Div =" + div);
                 break;
-
+            default:
+                choseMenu(CM,CM2);
+                break;
         }
     }
+
+
     public static String OperatorInput() {
         Scanner scanner2 = new Scanner(System.in);
         String random;
@@ -68,7 +80,6 @@ public class Calculator{
             return OperatorInput();
         }
     }
-
     public static double DoubleInput() {
         Scanner scanner1 = new Scanner(System.in);
         double random=0.0;
