@@ -14,18 +14,18 @@ public class Calculator{
         BigDecimal s=BigDecimalInput();
         ComplexNum CM = new ComplexNum(f, s);
         BigDecimal w= CM.absN();
-        System.out.println(w);
+        System.out.println("ABS: "+w);
         ComplexNum j= CM.getReciprocal();
-        System.out.println(j);
+        System.out.println("Reciprocal:" + j);
         System.out.println("Enter second double real:");
         BigDecimal f2=BigDecimalInput();
         System.out.println("Enter second double imagen:");
         BigDecimal s2=BigDecimalInput();
         ComplexNum CM2 = new ComplexNum(f2, s2);
         BigDecimal w2= CM2.absN();
-        System.out.println(w2);
+        System.out.println("ABS: "+w2);
         ComplexNum j2= CM2.getReciprocal();
-        System.out.println(j2);
+        System.out.println("Reciprocal:" + j2);
         choseMenu(CM,CM2);
     }
      static void choseMenu(ComplexNum CM, ComplexNum CM2){
@@ -62,14 +62,10 @@ public class Calculator{
                 BigDecimal i22 = CM2.getiNum().multiply(CM2.getiNum());
                 BigDecimal ri22 = r22.add(i22);
                 BigDecimal rs3 = ri.divide(ri22, 1000, RoundingMode.HALF_UP);
-                //double rs3 = (((CM2.getrNum() * CM.getrNum()) + (CM2.getiNum() * CM.getiNum()))) /
-                //        (CM2.getrNum() * CM2.getrNum() + CM2.getiNum() * CM2.getiNum());
                 BigDecimal r2i1=CM2.getrNum().multiply(CM.getiNum());
                 BigDecimal r1i2=CM.getrNum().multiply(CM2.getiNum());
                 BigDecimal r2i1r1i2= r2i1.subtract(r1i2);
                 BigDecimal is3 =r2i1r1i2.divide(ri22, 1000, RoundingMode.HALF_UP);
-                //double is3 = ((CM2.getrNum() * CM.getiNum()) - (CM.getrNum() * CM2.getiNum())) /
-                //                      //  (CM2.getrNum() * CM2.getrNum() + CM2.getiNum() * CM2.getiNum());
                 ComplexNum div = new ComplexNum(rs3, is3);
                 System.out.println("Div =" + div);
                 break;
@@ -78,8 +74,7 @@ public class Calculator{
                 break;
         }
     }
-
-
+    
     public static String OperatorInput() {
         Scanner scanner2 = new Scanner(System.in);
         String random;
@@ -96,28 +91,12 @@ public class Calculator{
         BigDecimal random;
         if (scanner1.hasNextBigDecimal()) {
             random = scanner1.nextBigDecimal();
-            //if (random.compareTo(BigDecimal.ZERO)<=0){
-            //System.out.println("Enter BigDecimal again");
-            //return BigDecimalInput();
-                //}
             return random;
         } else {
             System.out.println("Enter BigDecimal again");
             return BigDecimalInput();
         }
     }
-
-//    public static double DoubleInput() {
-//        Scanner scanner1 = new Scanner(System.in);
-//        double random=0.0;
-//        if (scanner1.hasNextDouble()) {
-//            random = scanner1.nextDouble();
-//            return random;
-//        } else {
-//            System.out.println("Enter double again");
-//            return DoubleInput();
-//        }
-//    }
 
 }
 

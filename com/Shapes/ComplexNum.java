@@ -24,7 +24,8 @@ public class ComplexNum{
 
       if (denom.compareTo(BigDecimal.ZERO)>0 || denom.compareTo(BigDecimal.ZERO)<0){
          BigDecimal iN=iNum.multiply(constm1).divide(denom, 1000, RoundingMode.HALF_UP);
-         return new ComplexNum(rNum.divide(denom, 1000, RoundingMode.HALF_UP), iN);
+         BigDecimal rN=rNum.divide(denom, 1000, RoundingMode.HALF_UP);
+         return new ComplexNum(rN, iN);
       } else{
          throw new IllegalStateException("You have zeros");
       }
