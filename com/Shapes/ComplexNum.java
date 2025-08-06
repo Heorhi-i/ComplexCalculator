@@ -11,7 +11,6 @@ public class ComplexNum{
       this.iNum = iNum;
    }
    public BigDecimal absN() {
-
        BigDecimal i=iNum.multiply(iNum);
        BigDecimal j=rNum.multiply(rNum);
        BigDecimal k=i.add(j);

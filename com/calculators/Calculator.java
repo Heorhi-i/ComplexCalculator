@@ -69,7 +69,7 @@ public class Calculator{
                 BigDecimal r2i1r1i2= r2i1.subtract(r1i2);
                 BigDecimal is3 =r2i1r1i2.divide(ri22, 1000, RoundingMode.HALF_UP);
                 //double is3 = ((CM2.getrNum() * CM.getiNum()) - (CM.getrNum() * CM2.getiNum())) /
-                      //  (CM2.getrNum() * CM2.getrNum() + CM2.getiNum() * CM2.getiNum());
+                //                      //  (CM2.getrNum() * CM2.getrNum() + CM2.getiNum() * CM2.getiNum());
                 ComplexNum div = new ComplexNum(rs3, is3);
                 System.out.println("Div =" + div);
                 break;
