@@ -1,35 +1,46 @@
 package com.Shapes;
+import java.math.*;
 
 public class ComplexNum{
-   private double rNum;
-   private double iNum;
+   private BigDecimal rNum;
+   private BigDecimal iNum;
+   final static BigDecimal constm1=new BigDecimal("-1");
 
-   public ComplexNum(double rNum, double iNum) {
+   public ComplexNum(BigDecimal rNum, BigDecimal iNum) {
       this.rNum = rNum;
       this.iNum = iNum;
    }
-   public double absN() {
-      return Math.sqrt(iNum*iNum+rNum*rNum);
+   public BigDecimal absN() {
+
+       BigDecimal i=iNum.multiply(iNum);
+       BigDecimal j=rNum.multiply(rNum);
+       BigDecimal k=i.add(j);
+      return k.sqrt(new MathContext(1000));
    }
+
    public ComplexNum getReciprocal(){
-      double denom = iNum*iNum+rNum*rNum;
-      if (denom !=0){
-         return new ComplexNum(rNum/denom, -iNum/denom);
+       BigDecimal i=iNum.multiply(iNum);
+       BigDecimal j=rNum.multiply(rNum);
+       BigDecimal denom=i.add(j);
+
+      if (denom.compareTo(BigDecimal.ZERO)>0 || denom.compareTo(BigDecimal.ZERO)<0){
+         BigDecimal iN=iNum.multiply(constm1).divide(denom, 1000, RoundingMode.HALF_UP);
+         return new ComplexNum(rNum.divide(denom, 1000, RoundingMode.HALF_UP), iN);
       } else{
          throw new IllegalStateException("You have zeros");
       }
    }
 
-   public double getrNum() {
+   public BigDecimal getrNum() {
       return rNum;
    }
-   public void setrNum(double rNum) {
+   public void setrNum(BigDecimal rNum) {
       this.rNum = rNum;
    }
-   public double getiNum() {
+   public BigDecimal getiNum() {
       return iNum;
    }
-   public void setiNum(double iNum) {
+   public void setiNum(BigDecimal iNum) {
       this.iNum = iNum;
    }
 
